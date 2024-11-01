@@ -1,0 +1,186 @@
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.tree {
+  --spacing: 3.5rem;
+  --radius: 25px;
+}
+
+.tree li {
+  display: block;
+  position: relative;
+  padding-left: calc(2 * var(--spacing) - var(--radius) - 2px);
+}
+
+.tree ul {
+  margin-left: calc(var(--radius) - var(--spacing));
+  padding-left: 0;
+  list-style-type: none; /* Убираем маркеры списка */
+}
+
+.tree ul li {
+  border-left: 2px solid #ddd;
+}
+
+.tree ul li:last-child {
+  border-color: transparent;
+}
+
+.tree ul li::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / -2);
+  left: -2px;
+  width: calc(var(--spacing) + 2px);
+  height: calc(var(--spacing) + 1px);
+  border: solid #ddd;
+  border-width: 0 0 2px 2px;
+}
+
+.tree span {
+  display: block;
+  cursor: pointer; /* Можно использовать указатель, как если бы это были кнопки */
+}
+
+.tree li::after,
+.tree span::before {
+  content: '';
+  display: block;
+  position: absolute;
+  top: calc(var(--spacing) / 2 - var(--radius));
+  left: calc(var(--spacing) - var(--radius) - 1px);
+  width: calc(2 * var(--radius));
+  height: calc(2 * var(--radius));
+  border-radius: 50%;
+  background: #ddd;
+}
+
+
+.employee-info {
+  width: 600px;
+  height: 50px;
+  display: flex !important;
+  justify-content: center; /* Центрирование по горизонтали */
+  align-items: center; /* Центрирование по вертикали */
+
+  margin: 25px 0;
+  border-radius: 15px;
+  border: 2px solid #ddd !important;
+}
+
+
+.green-element-bg::after {
+  background: #4CAF50 !important;
+}
+
+.green-element-bl ul li {
+  border-left: 2px solid #4CAF50;
+}
+
+.green-element-b::before {
+  border: solid #4CAF50 !important;
+  border-width: 0 0 2px 2px !important;
+}
+.green-employee-info {
+  border: 2px solid #4CAF50 !important;
+}
+
+
+.blue-element-bg::after {
+  background: #2196F3 !important;
+}
+
+.blue-element-bl ul li {
+  border-left: 2px solid #2196F3;
+}
+
+.blue-element-b::before {
+  border: solid #2196F3 !important;
+  border-width: 0 0 2px 2px !important;
+}
+
+.blue-employee-info {
+  border: 2px solid #2196F3 !important;
+}
+
+
+.gray-element-bg::after {
+  background: #ddd !important;
+}
+
+.gray-element-bl ul li {
+  border-left: 2px solid #ddd;
+}
+
+.gray-element-b::before {
+  border: solid #ddd !important;
+  border-width: 0 0 2px 2px !important;
+}
+
+.gray-employee-info {
+  border: 2px solid #ddd !important;
+}
+
+
+.orange-element-bg::after {
+  background: #FFD700 !important;
+}
+
+.orange-element-bl ul li {
+  border-left: 2px solid #FFD700;
+}
+
+.orange-element-b::before {
+  border: solid #FFD700 !important;
+  border-width: 0 0 2px 2px !important;
+}
+
+.orange-employee-info {
+  border: 2px solid #FFD700 !important;
+}
+
+.container{
+    text-align: center;
+}
+
+.container-tree{
+  display: flex;
+  justify-content: center;
+}
