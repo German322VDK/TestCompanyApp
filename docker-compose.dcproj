@@ -4,7 +4,7 @@
     <ProjectVersion>2.1</ProjectVersion>
     <DockerTargetOS>Linux</DockerTargetOS>
     <DockerPublishLocally>False</DockerPublishLocally>
-    <ProjectGuid>f63e11d7-17af-4bdd-89c4-51720a094b28</ProjectGuid>
+    <ProjectGuid>f63e11d7-17af-4bdd-89c4-51720a094b25</ProjectGuid>
     <DockerLaunchAction>LaunchBrowser</DockerLaunchAction>
     <DockerServiceUrl>{Scheme}://localhost:{ServicePort}/swagger</DockerServiceUrl>
     <DockerServiceName>testcompanyapp.api</DockerServiceName>
