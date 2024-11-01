@@ -1,0 +1,747 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class EmployeesDBStore
+   </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class EmployeesDBStore
+   ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore">
+  
+  
+  <h1 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore" class="text-break">Class EmployeesDBStore
+  </h1>
+  <div class="markdown level0 summary"><p>Класс для работы с хранилищем сотрудников в базе данных.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">System.Object</span></div>
+    <div class="level1"><span class="xref">EmployeesDBStore</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="TestCompanyApp.Infrastructure.Services.Stores.Employees.IEmployeesStore.html">IEmployeesStore</a></div>
+  </div>
+  <div class="inheritedMembers">
+    <h5>Inherited Members</h5>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.Equals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetHashCode()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.GetType()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.MemberwiseClone()</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ReferenceEquals(System.Object, System.Object)</span>
+    </div>
+    <div>
+      <span class="xref">System.Object.ToString()</span>
+    </div>
+  </div>
+  <h6><strong>Namespace</strong>: <a class="xref" href="TestCompanyApp.Infrastructure.Services.Stores.Employees.html">TestCompanyApp.Infrastructure.Services.Stores.Employees</a></h6>
+  <h6><strong>Assembly</strong>: TestCompanyApp.Infrastructure.dll</h6>
+  <h5 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class EmployeesDBStore : IEmployeesStore</code></pre>
+  </div>
+  <h3 id="constructors">Constructors
+  </h3>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore__ctor_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.#ctor*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore__ctor_TestCompanyApp_Database_Context_TestCompanyAppDbContext_Microsoft_Extensions_Logging_ILogger_TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore__" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.#ctor(TestCompanyApp.Database.Context.TestCompanyAppDbContext,Microsoft.Extensions.Logging.ILogger{TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore})">EmployeesDBStore(TestCompanyAppDbContext, ILogger&lt;EmployeesDBStore&gt;)</h4>
+  <div class="markdown level1 summary"><p>Конструктор для инициализации контекста базы данных и логгера.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public EmployeesDBStore(TestCompanyAppDbContext dbContext, ILogger&lt;EmployeesDBStore&gt; logger)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">TestCompanyApp.Database.Context.TestCompanyAppDbContext</span></td>
+        <td><span class="parametername">dbContext</span></td>
+        <td><p>Контекст базы данных.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">Microsoft.Extensions.Logging.ILogger</span>&lt;<a class="xref" href="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.html">EmployeesDBStore</a>&gt;</td>
+        <td><span class="parametername">logger</span></td>
+        <td><p>Логгер для записи информации и ошибок.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="methods">Methods
+  </h3>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_AddAsync_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.AddAsync*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_AddAsync_TestCompanyApp_Domain_ViewModels_AddedEmployeeViewModel_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.AddAsync(TestCompanyApp.Domain.ViewModels.AddedEmployeeViewModel)">AddAsync(AddedEmployeeViewModel)</h4>
+  <div class="markdown level1 summary"><p>Добавляет нового сотрудника в хранилище.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;Employee&gt; AddAsync(AddedEmployeeViewModel employeeVM)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TestCompanyApp.Domain.ViewModels.AddedEmployeeViewModel.html">AddedEmployeeViewModel</a></td>
+        <td><span class="parametername">employeeVM</span></td>
+        <td><p>Модель представления нового сотрудника.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<a class="xref" href="TestCompanyApp.Domain.Entity.Employee.html">Employee</a>&gt;</td>
+        <td><p>Добавленный сотрудник.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_AddRangeAsync_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.AddRangeAsync*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_AddRangeAsync_IEnumerable_TestCompanyApp_Domain_ViewModels_AddedEmployeeViewModel__" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.AddRangeAsync(IEnumerable{TestCompanyApp.Domain.ViewModels.AddedEmployeeViewModel})">AddRangeAsync(IEnumerable&lt;AddedEmployeeViewModel&gt;)</h4>
+  <div class="markdown level1 summary"><p>Добавляет коллекцию моделей представлениясотрудников в хранилище.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;IQueryable&lt;Employee&gt;&gt; AddRangeAsync(IEnumerable&lt;AddedEmployeeViewModel&gt; employeesVM)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IEnumerable</span>&lt;<a class="xref" href="TestCompanyApp.Domain.ViewModels.AddedEmployeeViewModel.html">AddedEmployeeViewModel</a>&gt;</td>
+        <td><span class="parametername">employeesVM</span></td>
+        <td><p>Коллекция сотрудников, которую нужно добавить.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">IQueryable</span>&lt;<a class="xref" href="TestCompanyApp.Domain.Entity.Employee.html">Employee</a>&gt;&gt;</td>
+        <td><p>Запрос добавленных сотрудников.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_DeleteAllAsync_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.DeleteAllAsync*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_DeleteAllAsync" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.DeleteAllAsync">DeleteAllAsync()</h4>
+  <div class="markdown level1 summary"><p>Удаляет всех сотрудников из хранилища</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; DeleteAllAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_DeleteAsync_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.DeleteAsync*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_DeleteAsync_System_Int32_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.DeleteAsync(System.Int32)">DeleteAsync(Int32)</h4>
+  <div class="markdown level1 summary"><p>Удаляет сотрудника из хранилища по его идентификатору.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; DeleteAsync(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Идентификатор сотрудника, которого нужно удалить.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>true, если удаление прошло успешно; иначе false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_FireAsync_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.FireAsync*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_FireAsync_System_Int32_System_Nullable_System_Int32__" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.FireAsync(System.Int32,System.Nullable{System.Int32})">FireAsync(Int32, Nullable&lt;Int32&gt;)</h4>
+  <div class="markdown level1 summary"><p>Уволяет сотрудника по его идентификатору.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; FireAsync(int id, int? newLeaderId = null)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Идентификатор сотрудника, которого нужно уволить.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Int32</span>&gt;</td>
+        <td><span class="parametername">newLeaderId</span></td>
+        <td><p>Новый руководитель вместо даннаго сотрудника</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>true, если увольнение прошло успешно; иначе false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_GetAll_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.GetAll*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_GetAll" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.GetAll">GetAll()</h4>
+  <div class="markdown level1 summary"><p>Получает всех сотрудников из хранилища.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;Employee&gt; GetAll()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="TestCompanyApp.Domain.Entity.Employee.html">Employee</a>&gt;</td>
+        <td><p>Запрос для получения всех сотрудников.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_GetAllEmployed_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.GetAllEmployed*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_GetAllEmployed" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.GetAllEmployed">GetAllEmployed()</h4>
+  <div class="markdown level1 summary"><p>Получает всех действующих сотрудников из хранилища.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;Employee&gt; GetAllEmployed()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="TestCompanyApp.Domain.Entity.Employee.html">Employee</a>&gt;</td>
+        <td><p>Запрос для получения всех действующих сотрудников.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_GetAllSubordinates_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.GetAllSubordinates*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_GetAllSubordinates_System_Int32_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.GetAllSubordinates(System.Int32)">GetAllSubordinates(Int32)</h4>
+  <div class="markdown level1 summary"><p>Возвращает всех подчинённых для заданного руководителя.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public IQueryable&lt;Employee&gt; GetAllSubordinates(int leaderId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">leaderId</span></td>
+        <td><p>Идентификатор руководителя.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">IQueryable</span>&lt;<a class="xref" href="TestCompanyApp.Domain.Entity.Employee.html">Employee</a>&gt;</td>
+        <td><p>Запрос для получения всех подчинённых сотрудников указанного руководителя.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_GetById_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.GetById*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_GetById_System_Int32_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.GetById(System.Int32)">GetById(Int32)</h4>
+  <div class="markdown level1 summary"><p>Получает сотрудника по его идентификатору.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Employee GetById(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Идентификатор сотрудника.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="TestCompanyApp.Domain.Entity.Employee.html">Employee</a></td>
+        <td><p>Сотрудник с заданным идентификатором или null, если не найден.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_HasSubordinates_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.HasSubordinates*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_HasSubordinates_System_Int32_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.HasSubordinates(System.Int32)">HasSubordinates(Int32)</h4>
+  <div class="markdown level1 summary"><p>Проверяет, есть ли у сотрудника подчиненные.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? HasSubordinates(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Идентификатор сотрудника.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>true, если у сотрудника есть подчиненные;
+false, если подчиненных нет;
+null, если сотрудник с указанным идентификатором не найден.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_IsEmployed_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.IsEmployed*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_IsEmployed_System_Int32_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.IsEmployed(System.Int32)">IsEmployed(Int32)</h4>
+  <div class="markdown level1 summary"><p>Проверяет, является ли сотрудник действующим по его идентификатору.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public bool? IsEmployed(int id)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">id</span></td>
+        <td><p>Идентификатор сотрудника.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Nullable</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>true, если сотрудник активен;
+false, если сотрудник уволен;
+null, если сотрудник с указанным идентификатором не найден.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_SetLeaderAsync_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.SetLeaderAsync*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_SetLeaderAsync_System_Int32_System_Int32_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.SetLeaderAsync(System.Int32,System.Int32)">SetLeaderAsync(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Устанавливает нового руководителя для подчиненного сотрудника.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; SetLeaderAsync(int subordinateId, int newLeaderId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">subordinateId</span></td>
+        <td><p>Идентификатор подчиненного.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newLeaderId</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  
+  
+  <a id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_SetNewLeaderAsync_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.SetNewLeaderAsync*"></a>
+  <h4 id="TestCompanyApp_Infrastructure_Services_Stores_Employees_EmployeesDBStore_SetNewLeaderAsync_System_Int32_System_Int32_" data-uid="TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.SetNewLeaderAsync(System.Int32,System.Int32)">SetNewLeaderAsync(Int32, Int32)</h4>
+  <div class="markdown level1 summary"><p>Меняет руководителя для группы подчиненных.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public async Task&lt;bool&gt; SetNewLeaderAsync(int oldLeaderId, int newLeaderId)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">oldLeaderId</span></td>
+        <td><p>Идентификатор старого руководителя.</p>
+</td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Int32</span></td>
+        <td><span class="parametername">newLeaderId</span></td>
+        <td><p>Идентификатор нового руководителя.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">Task</span>&lt;<span class="xref">System.Boolean</span>&gt;</td>
+        <td><p>true, если замена прошла успешно; иначе false.</p>
+</td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="TestCompanyApp.Infrastructure.Services.Stores.Employees.IEmployeesStore.html">IEmployeesStore</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            
+            <span>Generated by <strong>DocFX</strong></span>
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,94 @@
+﻿@page "/"
+@using Microsoft.AspNetCore.Components.Rendering
+@inject HttpClient Http
+@inject IUrlService urlService
+
+<PageTitle>Иерархия сотрудников</PageTitle>
+
+<div class="container">
+    <h1>Иерархия сотрудников</h1>
+    <div class="employee-tree">
+        @if (employees != null)
+        {
+            @RenderEmployeeTree()
+        }
+        else
+        {
+            <p>Загрузка данных...</p>
+        }
+    </div>
+</div>
+
+@code{
+    private IEnumerable<EmployeeViewModel>? employees;
+
+    protected override async Task OnInitializedAsync()
+    {
+        HttpResponseMessage response = await Http.GetAsync(urlService.GetAllEmployed);
+        if (!response.IsSuccessStatusCode)
+        {
+            return;
+        }
+
+        employees = await response.Content.ReadFromJsonAsync<IEnumerable<EmployeeViewModel>>(); 
+    }
+
+    private RenderFragment RenderEmployeeTree() => builder =>
+    {
+        RenderEmployees(builder, employees, null);
+    };
+
+    private void RenderEmployees(RenderTreeBuilder builder, IEnumerable<EmployeeViewModel> employees, int? leaderId, int lvl=1)
+    {
+        var subordinates = employees.Where(e => e.LeaderId == leaderId).ToList();
+
+        if (subordinates.Count == 0)
+            return;
+
+        string color = ColorSwitcher(lvl);
+        string colorParent = ColorSwitcher(lvl -1);
+        builder.OpenElement(0, "ul");
+        builder.AddAttribute(1, "class", $"tree {color}-element-bl");
+
+        foreach (var subordinate in subordinates)
+        {
+            builder.OpenElement(2, "li");
+            builder.AddAttribute(3, "class", $"{color}-element-bg {colorParent}-element-b");
+            // Отображаем имя сотрудника
+            builder.OpenElement(4, "span");
+            builder.AddAttribute(5, "class", $"{color}-element-b employee-info {color}-employee-info");
+            builder.AddContent(6, $"Id:{subordinate.Id}-{subordinate.SurName} {subordinate.FirstName} {subordinate.Patronymic} ({subordinate.JobTitle}), LeaderId:{subordinate.LeaderId}");
+            builder.CloseElement(); // Закрываем span
+
+            // Рекурсивно добавляем подчинённых
+            RenderEmployees(builder, employees, subordinate.Id, lvl+1);
+
+            builder.CloseElement(); // Закрываем li
+        }
+
+        builder.CloseElement(); // Закрываем ul
+    }
+
+    private string ColorSwitcher(int lvl)
+    {
+        string colorClass = "";
+
+        switch (lvl)
+        {
+            case 1:
+                colorClass = "green";
+                break;
+            case 2:
+                colorClass = "blue";
+                break;
+            case 3:
+                colorClass = "orange";
+                break;
+            default:
+                colorClass = "gray";
+                break;
+        }
+
+        return colorClass;
+    }
+}

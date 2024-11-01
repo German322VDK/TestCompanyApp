@@ -1,0 +1,390 @@
+{
+  "homepages": [],
+  "source_base_path": "C:/data/CS/DNC/TestCompanyApp/docfx_project",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.API.Controllers.EmployeesController.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.API.Controllers.EmployeesController.html",
+          "hash": "/N6c4OM+2pHFFUz0ZU/Gju1EZsSSaMhE3+1u1A+ActA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.API.Controllers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.API.Controllers.html",
+          "hash": "1OrMA77ayc7D/TwJ8HrrA11m++ZS2tEOMlviLZor0I8="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.API.Program.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.API.Program.html",
+          "hash": "tTKKVF1zmRSxfLs6qnCOMBnewBOpnnnqXJKWWAJNNpI="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.API.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.API.html",
+          "hash": "kYARd6L1aqsYNaJag9M2jW2jX+/7WzInvWLfvz6W+XA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Domain.Entity.Employee.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Domain.Entity.Employee.html",
+          "hash": "XOup1monN6Qc4UpexCkF216ruRppFcwbu94cmtg2Ulo="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Domain.Entity.Position.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Domain.Entity.Position.html",
+          "hash": "quR5rYwTaZ7loHTqMh/3N8/pb6JqKM/hDZO9QGcNfY4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Domain.Entity.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Domain.Entity.html",
+          "hash": "aU/VSA4EhfHbAD8lLLUhIcnYlFFh6uQ5Ob/AckwxMGM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Domain.ViewModels.AddedEmployeeViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Domain.ViewModels.AddedEmployeeViewModel.html",
+          "hash": "+vbWa6AmRGI+EMhLWpyuX8fbXWzVE9um3s1ojy6anK4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Domain.ViewModels.EmployeeBaseViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Domain.ViewModels.EmployeeBaseViewModel.html",
+          "hash": "foT+63jQhzbcLlK28XvJHWqcrg+mXro15Hz8A+gMAeQ="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Domain.ViewModels.EmployeeViewModel.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Domain.ViewModels.EmployeeViewModel.html",
+          "hash": "gwi4GdANtw3mHFAekH5phjEFWjK/FC7x8peQY+AjNIM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Domain.ViewModels.LeaderPosition.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Domain.ViewModels.LeaderPosition.html",
+          "hash": "70L3Sw3HqomBO4qkXmErgYHVCIXk5NiJ/OHWbLByvKk="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Domain.ViewModels.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Domain.ViewModels.html",
+          "hash": "32EVFcMNOx/EXJ9TKCfsyLtmRmSmChFRaTeqR/4vAsw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.Initializers.IDbInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.Initializers.IDbInitializer.html",
+          "hash": "MGkxWA5GPbWLWcGX6ABM+qOFDf/UYF9CVqvmTdiZ85k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.Initializers.TestCompanyAppDbInitializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.Initializers.TestCompanyAppDbInitializer.html",
+          "hash": "ZDRionK2JA4OFxc0Hqh8jRkzysJf5Imvm8hfe401FlA="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.Initializers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.Initializers.html",
+          "hash": "JiFLTHSlVMcyNX6cIvFmhGWJItrSZgmxprOs8RCfam0="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.Services.Mapping.EmployeeMapper.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.Services.Mapping.EmployeeMapper.html",
+          "hash": "IKHcY5m/9NKGFgDk7AJt5YTojAEJuy4gvZcEzyU6rbY="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.Services.Mapping.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.Services.Mapping.html",
+          "hash": "kw6oN9/HmzXMvUs3De9Xr8V3H6P6xzjpziM6q4UhxlE="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.Services.Stores.Employees.EmployeesDBStore.html",
+          "hash": "BRgbj9NwOaYq91/pky9WXJ0KFYfVo5ZWGp365kUgxDM="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.Services.Stores.Employees.IEmployeesStore.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.Services.Stores.Employees.IEmployeesStore.html",
+          "hash": "CfHa9VtioOd7Sr6ShXG/Vi34Ajfejs+idlm+/p4//8M="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.Services.Stores.Employees.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.Services.Stores.Employees.html",
+          "hash": "6GLOWSyQDNotFJ7YvEuSgCz1kridNmhbL9hYWF+ah6k="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.StaticData.TestData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.StaticData.TestData.html",
+          "hash": "hLYRSmkuqaLZpTaBuC/MQmxGl6DmY9nas6QDlkXI7e4="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/TestCompanyApp.Infrastructure.StaticData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/TestCompanyApp.Infrastructure.StaticData.html",
+          "hash": "qaqVizsk7bTz2DsQVnAIHZ76pbdRY0jMK/oKag9DwOw="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "api/index.md",
+      "output": {
+        ".html": {
+          "relative_path": "api/index.html",
+          "hash": "w8d1EpB2lW1D3UCMrWZ0ksbZYHNg9tW3sG1gvOi2q60="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "YEfxRjpBbVX7ni72MUtYpYp9Eo9fJX/HnaeawWpjKVo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "articles/intro.md",
+      "output": {
+        ".html": {
+          "relative_path": "articles/intro.html",
+          "hash": "nzj3nZSTldqmGMlu3nZJJIODlMZRm0QzNxHM0vuKyTU="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "articles/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "articles/toc.html",
+          "hash": "BlPxk5mtl2kgfcZUgkEguqiSAR/EUyUTT4EdebwkQvs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "uQiOLckxmpguAW0I3wZ9MSJZhXIpk/qTLoh07UkkF3s="
+        }
+      },
+      "is_incremental": true,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WSuRrYiGwKKMbtdG9z8W9fXmLoCyTnGg9AxbPKLXm2Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": true,
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 3
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": true,
+          "incrementalPhase": "build",
+          "total_file_count": 22,
+          "skipped_file_count": 22
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": true,
+        "details": "Can support incremental post processing.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

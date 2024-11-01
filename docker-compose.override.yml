@@ -1,0 +1,14 @@
+services:
+  backend:
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "5002:8080"
+
+  client:
+    ports:
+      - "3600:3000"
+
+  proxy:
+   ports:
+     - "8080:8080"
